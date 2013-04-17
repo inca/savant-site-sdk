@@ -16,6 +16,11 @@ class Main extends Router {
 
     case Some(community) =>
 
+      get("/~reset") = {
+        community.downloadLayoutFtl()
+        sendRedirect("/")
+      }
+
       get("/css/*") = {
         response.contentType("text/css")
         val file = new File(community.cssDir, uri(1))
@@ -25,6 +30,10 @@ class Main extends Router {
       }
 
       get("/*").and(!uri(1).endsWith(".p")) = {
+        // Download the layout if it does not exist
+        if (!community.layoutFtl.isFile)
+          community.downloadLayoutFtl()
+        // Process the request
         val template = community.ftlConf.getTemplate("/" + uri(1) + ".ftl")
         val result = new StringWriter
         template.process(new SiteFtlData(community), result)

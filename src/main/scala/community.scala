@@ -69,10 +69,7 @@ class Community
     }
   }
 
-  lazy val ftlConf = {
-    downloadLayoutFtl()
-    new SiteFtlConf(this)
-  }
+  lazy val ftlConf = new SiteFtlConf(this)
 
 }
 
