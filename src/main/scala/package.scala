@@ -8,7 +8,7 @@ package object sites {
 
   val LOG = new Logger("pro.savant.sites")
 
-  val root = new File(System.getProperty("user.home"), ".savant.pro/sites")
+  val root = new File("data")
 
   val communitiesXmlUrl = new URL("http://savant.pro/communities.xml")
 

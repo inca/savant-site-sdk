@@ -5,14 +5,14 @@
     <title>SAVANT.PRO Sites Development Kit</title>
     <link type="text/css"
           rel="stylesheet"
-          href="http://cdn.savant.pro/css/themes/cx.css"/>
-    <script type="text/javascript" src="http://cdn.savant.pro/js/jquery.js">
+          href="/css/themes/cx.css"/>
+    <script type="text/javascript" src="/js/jquery.js">
     </script>
-    <script type="text/javascript" src="http://cdn.savant.pro/js/jquery.ui.min.js">
+    <script type="text/javascript" src="/js/jquery.ui.min.js">
     </script>
-    <script type="text/javascript" src="http://savant.pro/svc/locale.js">
+    <script type="text/javascript" src="/svc/locale.js">
     </script>
-    <script type="text/javascript" src="http://cdn.savant.pro/js/ea.ui.js">
+    <script type="text/javascript" src="/js/ea.ui.js">
     </script>
     <script type="text/javascript">
       $(function() {
@@ -25,7 +25,7 @@
       <div id="header"
            class="heavy">
         <div class="cell logo no-mobile">
-          <img src="http://cdn.savant.pro/home/communities/00/00/00/01/static/icon.png"/>
+          <img src="/img/savant-owl.png"/>
         </div>
         <div class="cell">
           <div class="title">savant.pro/dev</div>
@@ -41,7 +41,7 @@
              class="sav-logo no-icon"
              title="SAVANT.PRO"
              target="_blank">
-            <img src="http://cdn.savant.pro/img/savant-logo-small.png"/>
+            <img src="/img/savant-logo-small.png"/>
           </a>
         </div>
         <div>

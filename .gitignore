@@ -20,5 +20,5 @@ nohup.out
 target/
 project/boot/
 .idea/
-*/src/main/webapp/uploads/
+data/
 

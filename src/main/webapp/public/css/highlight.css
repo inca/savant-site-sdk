@@ -1,0 +1,120 @@
+.content-output pre code {
+  display: block;
+  color: black;
+}
+.content-output pre .comment,
+.content-output pre .template_comment,
+.content-output pre .javadoc,
+.content-output pre .comment * {
+  color: #999;
+}
+.content-output pre .keyword,
+.content-output pre .method,
+.content-output pre .list .title,
+.content-output pre .nginx .title,
+.content-output pre .tag .title,
+.content-output pre .setting .value,
+.content-output pre .winutils,
+.content-output pre .tex .command,
+.content-output pre .http .title,
+.content-output pre .request,
+.content-output pre .status {
+  color: #048;
+}
+.content-output pre .envvar,
+.content-output pre .tex .special {
+  color: #660;
+}
+.content-output pre .string,
+.content-output pre .tag .value,
+.content-output pre .cdata,
+.content-output pre .filter .argument,
+.content-output pre .attr_selector,
+.content-output pre .apache .cbracket,
+.content-output pre .date,
+.content-output pre .regexp {
+  color: #080;
+}
+.content-output pre .sub .identifier,
+.content-output pre .pi,
+.content-output pre .tag,
+.content-output pre .tag .keyword,
+.content-output pre .decorator,
+.content-output pre .ini .title,
+.content-output pre .shebang,
+.content-output pre .input_number,
+.content-output pre .hexcolor,
+.content-output pre .rules .value,
+.content-output pre .css .value .number,
+.content-output pre .literal,
+.content-output pre .symbol,
+.content-output pre .ruby .symbol .string,
+.content-output pre .ruby .symbol .keyword,
+.content-output pre .ruby .symbol .keymethods,
+.content-output pre .number,
+.content-output pre .css .function {
+  color: #066;
+}
+.content-output pre .class .title,
+.content-output pre .haskell .type,
+.content-output pre .smalltalk .class,
+.content-output pre .javadoctag,
+.content-output pre .yardoctag,
+.content-output pre .phpdoc,
+.content-output pre .typename,
+.content-output pre .tag .attribute,
+.content-output pre .doctype,
+.content-output pre .class .id,
+.content-output pre .built_in,
+.content-output pre .setting,
+.content-output pre .params,
+.content-output pre .variable {
+  color: #000;
+}
+.content-output pre .css .tag,
+.content-output pre .rules .property,
+.content-output pre .pseudo,
+.content-output pre .subst {
+  color: #000;
+}
+.content-output pre .css .class,
+.content-output pre .css .id {
+  color: #9B703F;
+}
+.content-output pre .value .important {
+  color: #ff7700;
+  font-weight: bold;
+}
+.content-output pre .rules .keyword {
+  color: #C5AF75;
+}
+.content-output pre .annotation,
+.content-output pre .apache .sqbracket,
+.content-output pre .nginx .built_in {
+  color: #985;
+}
+.content-output pre .preprocessor,
+.content-output pre .preprocessor * {
+  color: #444;
+}
+.content-output pre .tex .formula {
+  background-color: #EEE;
+  font-style: italic;
+}
+.content-output pre .diff .header,
+.content-output pre .chunk {
+  color: #808080;
+  font-weight: bold;
+}
+.content-output pre .diff .change {
+  background-color: #BCCFF9;
+}
+.content-output pre .addition {
+  background-color: #BAEEBA;
+}
+.content-output pre .deletion {
+  background-color: #FFC8BD;
+}
+.content-output pre .comment .yardoctag {
+  font-weight: bold;
+}

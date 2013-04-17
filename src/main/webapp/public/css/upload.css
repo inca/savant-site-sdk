@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'ScriptinaProRegular';
+  src: url('/fonts/Scriptina_Pro-webfont.eot');
+  src: url('/fonts/Scriptina_Pro-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Scriptina_Pro-webfont.woff') format('woff'), url('/fonts/Scriptina_Pro-webfont.ttf') format('truetype'), url('/fonts/Scriptina_Pro-webfont.svg#ScriptinaProRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHeros';
+  src: url('/fonts/texgyreheros-regular-webfont.eot');
+  src: url('/fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheros-regular-webfont.woff') format('woff'), url('/fonts/texgyreheros-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHeros';
+  src: url('/fonts/texgyreheros-italic-webfont.eot');
+  src: url('/fonts/texgyreheros-italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheros-italic-webfont.woff') format('woff'), url('/fonts/texgyreheros-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TeXGyreHeros';
+  src: url('/fonts/texgyreheros-regular-webfont.eot');
+  src: url('/fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheros-regular-webfont.woff') format('woff'), url('/fonts/texgyreheros-regular-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHeros';
+  src: url('/fonts/texgyreheros-italic-webfont.eot');
+  src: url('/fonts/texgyreheros-italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheros-italic-webfont.woff') format('woff'), url('/fonts/texgyreheros-italic-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TeXGyreHeros';
+  src: url('/fonts/texgyreheros-bold-webfont.eot');
+  src: url('/fonts/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheros-bold-webfont.woff') format('woff'), url('/fonts/texgyreheros-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHeros';
+  src: url('/fonts/texgyreheros-bolditalic-webfont.eot');
+  src: url('/fonts/texgyreheros-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheros-bolditalic-webfont.woff') format('woff'), url('/fonts/texgyreheros-bolditalic-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TeXGyreHerosCn';
+  src: url('/fonts/texgyreheroscn-regular-webfont.eot');
+  src: url('/fonts/texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheroscn-regular-webfont.woff') format('woff'), url('/fonts/texgyreheroscn-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHerosCn';
+  src: url('/fonts/texgyreheroscn-italic-webfont.eot');
+  src: url('/fonts/texgyreheroscn-italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheroscn-italic-webfont.woff') format('woff'), url('/fonts/texgyreheroscn-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TeXGyreHerosCn';
+  src: url('/fonts/texgyreheroscn-regular-webfont.eot');
+  src: url('/fonts/texgyreheroscn-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheroscn-regular-webfont.woff') format('woff'), url('/fonts/texgyreheroscn-regular-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHerosCn';
+  src: url('/fonts/texgyreheroscn-italic-webfont.eot');
+  src: url('/fonts/texgyreheroscn-italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheroscn-italic-webfont.woff') format('woff'), url('/fonts/texgyreheroscn-italic-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TeXGyreHerosCn';
+  src: url('/fonts/texgyreheroscn-bold-webfont.eot');
+  src: url('/fonts/texgyreheroscn-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheroscn-bold-webfont.woff') format('woff'), url('/fonts/texgyreheroscn-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TeXGyreHerosCn';
+  src: url('/fonts/texgyreheroscn-bolditalic-webfont.eot');
+  src: url('/fonts/texgyreheroscn-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/texgyreheroscn-bolditalic-webfont.woff') format('woff'), url('/fonts/texgyreheroscn-bolditalic-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 4px dashed #ccc;
+  border-radius: 12px;
+  height: 64px;
+}
+a {
+  text-decoration: none;
+}
+#file,
+#prompt,
+#error,
+#uploaded,
+#standby {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 72px;
+  text-align: left;
+  font-size: 18px;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI", 'TeXGyreHeros', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-variant: small-caps;
+  padding-left: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#file {
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer !important;
+}
+#prompt {
+  color: #777;
+  background: url(/img/glyph/32/upload_button.png) 16px center no-repeat;
+  cursor: pointer;
+}
+#standby {
+  color: #777;
+  background: url(/img/glyph/32/clock.png) 16px center no-repeat;
+  cursor: progress;
+  display: none;
+}
+#error {
+  color: #882222;
+  background: url(/img/glyph/32/repeat.png) 16px center no-repeat;
+}
+#uploaded {
+  color: #777;
+  background: url(/img/glyph/32/ok.png) 16px center no-repeat;
+}
+#filename {
+  color: #669922;
+}
+#retry {
+  color: #777;
+  font-variant: normal;
+  font-size: 14px;
+  font-style: italic;
+}

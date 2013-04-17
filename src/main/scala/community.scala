@@ -3,7 +3,7 @@ package sites
 
 import circumflex._, xml._, cache._
 import java.net.URL
-import java.io.{FileOutputStream, File}
+import java.io.{IOException, FileOutputStream, File}
 import org.apache.commons.io.{FileUtils, IOUtils}
 import collection.JavaConversions._
 
@@ -51,16 +51,21 @@ class Community
   def layoutFtl = new File(root, "layouts/" + id + ".ftl")
 
   def downloadLayoutFtl() {
-    def url = new URL(baseHref + "/layout.ftl")
-    LOG.info("Downloading " + url.toString)
-    layoutFtl.getParentFile.mkdirs()
-    val is = url.openStream()
-    val out = new FileOutputStream(layoutFtl)
     try {
-      IOUtils.copy(is, out)
-    } finally {
-      is.close()
-      out.close()
+      def url = new URL(baseHref + "/layout.ftl")
+      LOG.info("Downloading " + url.toString)
+      layoutFtl.getParentFile.mkdirs()
+      val is = url.openStream()
+      val out = new FileOutputStream(layoutFtl)
+      try {
+        IOUtils.copy(is, out)
+      } finally {
+        is.close()
+        out.close()
+      }
+    } catch{
+      case e: IOException =>
+        LOG.error("Could not download template file.", e)
     }
   }
 
@@ -73,26 +78,36 @@ class Community
 
 class Communities
     extends ListHolder[Community]
+    with XmlFile
     with Cached {
 
   def elemName = "communities"
 
-  def expired = false
+  override def expired = false
+
+  def descriptorFile = new File(root, "communities.xml")
 
   def read = {
     case "community" => new Community
   }
 
-  def load(): this.type = {
+  override def load(): this.type = try {
     val url = communitiesXmlUrl
-    LOG.info("Downloading " + url.toString)
     val is = url.openStream()
+    LOG.info("Downloading " + url.toString)
     try {
       loadFrom(is)
+      // Caching locally
+      save()
     } finally {
       is.close()
     }
     this
+  } catch {
+    case e: IOException =>
+      LOG.error("Could not download communities list.", e)
+      super.load()
+      this
   }
 
 }

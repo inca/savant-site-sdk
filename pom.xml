@@ -12,7 +12,7 @@
 
   <properties>
     <cx.version>3.0-SNAPSHOT</cx.version>
-    <cx.port>8180</cx.port>
+    <cx.port>8888</cx.port>
     <cx.router>pro.savant.sites.Main</cx.router>
     <ftl.configuration>pro.savant.sites.SystemFtlConf$</ftl.configuration>
   </properties>
