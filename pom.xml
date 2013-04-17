@@ -8,18 +8,24 @@
   <artifactId>site-sdk</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>SAVANT.PRO Site Development Toolkit</name>
+  <name>SAVANT.PRO Sites Development Toolkit</name>
 
   <properties>
     <cx.version>3.0-SNAPSHOT</cx.version>
     <cx.port>8180</cx.port>
-    <cx.router>pro.savant.site.Main</cx.router>
+    <cx.router>pro.savant.sites.Main</cx.router>
+    <ftl.configuration>pro.savant.sites.SystemFtlConf$</ftl.configuration>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>pro.savant.circumflex</groupId>
       <artifactId>circumflex-web</artifactId>
+      <version>${cx.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>pro.savant.circumflex</groupId>
+      <artifactId>circumflex-xml</artifactId>
       <version>${cx.version}</version>
     </dependency>
     <dependency>
