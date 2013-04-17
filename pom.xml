@@ -5,10 +5,10 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>pro.savant</groupId>
-  <artifactId>site-tester</artifactId>
+  <artifactId>site-sdk</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>SAVANT.PRO Site Tester</name>
+  <name>SAVANT.PRO Site Development Toolkit</name>
 
   <properties>
     <cx.version>3.0-SNAPSHOT</cx.version>
@@ -17,11 +17,6 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>pro.savant.circumflex</groupId>
-      <artifactId>circumflex-core</artifactId>
-      <version>${cx.version}</version>
-    </dependency>
     <dependency>
       <groupId>pro.savant.circumflex</groupId>
       <artifactId>circumflex-web</artifactId>
