@@ -5,7 +5,8 @@ import circumflex._, core._, web._, markeven._, freemarker._
 import _root_.freemarker.template.{TemplateExceptionHandler, Configuration}
 import _root_.freemarker.cache.{TemplateLoader, MultiTemplateLoader, ClassTemplateLoader, FileTemplateLoader}
 import _root_.freemarker.log.{Logger => FLogger}
-import java.io.File
+import java.io.{FileNotFoundException, File}
+import java.util.Locale
 
 trait BaseFtlConf extends Configuration {
 
@@ -54,6 +55,20 @@ class SiteFtlConf(val community: Community)
   setTemplateLoader(
     new FileTemplateLoader(community.rootDir))
 
+  override def getTemplate(name: String,
+                           locale: Locale,
+                           encoding: String,
+                           parse: Boolean) =
+    try {
+      super.getTemplate(name, locale, encoding, parse)
+    } catch {
+      case e: FileNotFoundException =>
+        super.getTemplate(
+          name.replaceAll("\\.ftl$", "/.ftl"),
+          locale,
+          encoding,
+          parse)
+    }
 }
 
 class SiteFtlData(protected val $community: Community) {
