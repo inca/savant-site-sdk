@@ -53,7 +53,7 @@ class SiteFtlConf(val community: Community)
   community.rootDir.mkdirs()
 
   setTemplateLoader(
-    new FileTemplateLoader(community.rootDir))
+    new FileTemplateLoader(community.rootDir, true))
 
   override def getTemplate(name: String,
                            locale: Locale,
