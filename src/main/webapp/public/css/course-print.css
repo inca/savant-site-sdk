@@ -320,6 +320,38 @@ a.no-underline,
   margin-left: 8px;
   margin-right: 8px;
 }
+#outer {
+  position: relative;
+  z-index: 2;
+  margin: 8px 48px;
+  -webkit-transition: margin .3s;
+  -moz-transition: margin .3s;
+  -o-transition: margin .3s;
+  -ie-transition: margin .3s;
+  transition: margin .3s;
+}
+#outer .outside {
+  margin-left: -48px;
+  margin-right: -48px;
+}
+@media screen and (max-width: 960px) {
+  .outside {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  #outer {
+    margin: 8px;
+  }
+}
+.content-box {
+  padding: 16px 48px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .content-box {
+    padding: 8px 16px;
+  }
+}
 .grid::after {
   content: '';
   display: block;
@@ -1445,20 +1477,12 @@ a.no-underline,
 }
 .content-box .decoration {
   box-sizing: border-box;
-  margin-left: -64px !important;
-  margin-right: -64px !important;
-  padding-left: 64px !important;
-  padding-right: 64px !important;
+  margin-left: -48px !important;
+  margin-right: -48px !important;
+  padding-left: 48px !important;
+  padding-right: 48px !important;
 }
-@media screen and (max-width: 1280px) {
-  .content-box .decoration {
-    margin-left: -40px !important;
-    margin-right: -40px !important;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-}
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 96px) {
   .content-box .decoration {
     margin-left: -16px !important;
     margin-right: -16px !important;
@@ -1507,15 +1531,6 @@ a.no-underline,
 .frame-wrapped .wrap-out {
   margin: 0 -12px;
   border-radius: 2px;
-}
-.content-box {
-  padding: 16px 48px;
-  overflow: hidden;
-}
-@media screen and (max-width: 768px) {
-  .content-box {
-    padding: 8px 16px;
-  }
 }
 .letterbox {
   position: relative;
