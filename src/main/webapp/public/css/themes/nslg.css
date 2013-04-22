@@ -335,12 +335,12 @@ a.no-underline,
   margin-right: -48px;
 }
 @media screen and (max-width: 960px) {
-  .outside {
-    margin-left: -8px;
-    margin-right: -8px;
-  }
   #outer {
     margin: 8px;
+  }
+  #outer .outside {
+    margin-left: -8px;
+    margin-right: -8px;
   }
 }
 .content-box {
