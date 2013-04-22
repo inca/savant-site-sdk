@@ -34,9 +34,9 @@ class Community
 
   def cssDir = new File(rootDir, "css")
 
-  def cssFiles = FileUtils
-      .listFiles(cssDir, Array("css"), true)
-      .toSeq
+  def cssFiles =
+    if (!cssDir.isDirectory) Nil
+    else FileUtils.listFiles(cssDir, Array("css"), true).toSeq
 
   def cssUrls = {
     val prefix = cssDir.getCanonicalPath
